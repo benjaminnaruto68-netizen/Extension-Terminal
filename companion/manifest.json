@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Extension Terminal Companion",
+  "version": "1.0.0",
+  "description": "Manage installed Chrome extensions by ID.",
+  "permissions": ["management"],
+  "action": {
+    "default_title": "Extension Terminal",
+    "default_popup": "popup.html"
+  }
+}
