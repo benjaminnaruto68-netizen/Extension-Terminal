@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Extension Terminal Companion</title>
+<style>
+*{box-sizing:border-box}body{margin:0;width:330px;background:#0b1020;color:#d8e5ff;font:14px system-ui;padding:18px}
+h1{font-size:18px;color:#7cf7c4;margin:0 0 5px}p{color:#9aabc9;font-size:12px;margin:0 0 15px}
+input{width:100%;padding:11px;border-radius:8px;background:#151d31;border:1px solid #33425f;color:#fff;margin-bottom:10px}
+button{border:0;border-radius:8px;padding:10px 12px;font-weight:700;cursor:pointer;background:#62e6ad;color:#08130f}
+.buttons{display:flex;gap:8px}.buttons button{flex:1}.buttons .off{background:#ff747d;color:#200a0c}
+#status{margin:12px 0;padding:10px;background:#151d31;border-radius:8px;min-height:44px;color:#c5d4ee}
+small{display:block;color:#8094b6;margin-top:12px}
+</style>
+</head>
+<body>
+<h1>Extension Terminal</h1>
+<p>Enter a Chrome extension ID to manage its state.</p>
+<input id="id" placeholder="Extension ID" spellcheck="false" autocomplete="off">
+<div class="buttons"><button id="enable">Enable</button><button class="off" id="disable">Disable</button></div>
+<div id="status">Ready. Enter an ID above.</div>
+<small>Only extensions installed in this Chrome profile can be managed. Chrome may restrict certain extensions.</small>
+<script src="popup.js"></script>
+</body></html>
